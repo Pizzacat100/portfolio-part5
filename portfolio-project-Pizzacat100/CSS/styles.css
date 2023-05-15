@@ -1,0 +1,346 @@
+body {
+	font-family: "Montserrat", sans-serif;
+}
+
+/* ========== Header ========== */
+
+#header {
+	text-align: start;
+	color: orange;
+	background-color: #333;
+	position: fixed;
+	width: 100%;
+	padding: 0;
+}
+
+/* ========== Nav Bar ========== */
+header nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+header nav li {
+	float: right;
+	border-right: 1px solid #bbb;
+}
+
+header nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+header nav ul li a:hover {
+	background-color: #3b5998;
+}
+
+header nav ul li:first-child {
+	border-right: none;
+}
+
+/* ========== Body ========== */
+
+#Body {
+	margin-top: -22px;
+	color: #000000;
+	background-color: orange;
+	background-image: linear-gradient(to right, lightblue, orange, lightblue);
+	font-family: "PT Serif", serif;
+}
+
+.bio-header {
+	position: relative;
+	top: 50px;
+	text-align: center;
+	color: white;
+	width: 50%;
+	height: inherit;
+	margin: 20px auto;
+	border: solid;
+	border-color: white;
+	border-width: 3px;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	font-family: "VT323", monospace;
+	font-size: 20px;
+}
+
+.card1 {
+	color: white;
+	width: 50%;
+	height: inherit;
+	margin: 20px auto;
+	border: solid;
+	border-color: white;
+	border-width: 3px;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	letter-spacing: 2px;
+	margin-top: 75px;
+}
+
+.card1 h3 {
+	text-align: center;
+}
+
+.bio-header,
+.c2-title,
+.c4-title,
+.c3-title,
+.c5-title {
+	position: relative;
+	top: 50px;
+	text-align: center;
+	color: white;
+	width: 50%;
+	height: inherit;
+	margin: 20px auto;
+	border: solid;
+	border-color: white;
+	border-width: 3px;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	font-family: "VT323", monospace;
+	font-size: 20px;
+}
+
+.card2,
+.card3,
+.card4,
+.card5 {
+	color: white;
+	width: 50%;
+	height: inherit;
+	margin: 20px auto;
+	border: solid;
+	border-color: white;
+	border-width: 3px;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	letter-spacing: 2px;
+	margin-top: 75px;
+}
+
+.extra-card {
+	color: white;
+	width: 50%;
+	height: inherit;
+	margin: 20px auto;
+	border: solid;
+	border-color: white;
+	border-width: 3px;
+	border-radius: 3px;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	display: flex;
+}
+
+.extra1 {
+	right: 50px;
+	width: 250px;
+	margin: 0px auto;
+	padding: 0 50px;
+	border: solid;
+	border-color: yellowgreen;
+	border-width: 3px;
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	color: black;
+}
+
+.extra2 {
+	right: 0px;
+	width: 250px;
+	margin: 0px auto;
+	padding: 0 50px;
+	border: solid;
+	border-color: yellowgreen;
+	border-width: 3px;
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	color: black;
+}
+
+.extra3 {
+	right: -50px;
+	width: 250px;
+	margin: 0px auto;
+	padding: 0 50px;
+	border: solid;
+	border-color: yellowgreen;
+	border-width: 3px;
+	border-radius: 3px;
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	color: black;
+}
+.extra3 h2,
+.extra2 h2,
+.extra1 h2 {
+	text-align: center;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5 {
+	display: grid;
+	grid-template-areas: "head head head head" "pro pro pro prop" "img img img img" "des des des des";
+	grid-gap: 40px;
+
+	background-repeat: repeat;
+}
+
+/* ========== Contact ========== */
+.container-contact-outer {
+	color: black;
+	text-align: center;
+	padding: 30px 0 0 0;
+}
+
+.container-contact {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0;
+	padding: 5% 0;
+	color: black;
+}
+
+.vertical-hr hr {
+	border: none;
+	border-left: 1px solid hsla(200, 10%, 50%, 100);
+	height: 40vh;
+	width: 1px;
+	color: black;
+}
+
+.vertical-hr {
+	margin: 0;
+	padding: 0;
+}
+
+.contact-form .name-first {
+	grid-area: fname;
+}
+.contact-form .name-last {
+	grid-area: lname;
+}
+.contact-form .email {
+	grid-area: email;
+}
+.contact-form .phone {
+	grid-area: phone;
+}
+
+.contact-form .message {
+	grid-area: message;
+}
+
+.contact-form button {
+	grid-area: button;
+}
+
+.contact-form {
+	display: grid;
+	justify-items: center;
+	justify-content: left;
+	grid-template-areas:
+		"fname lname"
+		"email phone"
+		"message message"
+		"button button";
+	grid-gap: 30px;
+}
+
+.contact-form input {
+	background: transparent;
+	color: black;
+	border: none;
+	border-bottom: 2px solid #fff;
+	min-width: 250px;
+	height: 50px;
+}
+
+.contact-form textarea {
+	background: transparent;
+	color: black;
+	border: none;
+	border-bottom: 2px solid #fff;
+	min-width: 550px;
+	height: 150px;
+}
+
+.contact-form ::placeholder {
+	color: black;
+	padding-bottom: 10px;
+}
+
+.contact-form button {
+	height: 30px;
+	width: 200px;
+	background: transparent;
+	color: black;
+	border: 2px solid #fff;
+	border-radius: 2px;
+}
+
+.contact-form button:hover {
+	background: rgba(255, 255, 255, 0.5);
+	color: black;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+
+/* ========== Footer ========== */
+footer {
+	background: #333;
+	color: white;
+	padding: 25px 0px;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 25px auto;
+	padding: 0;
+	overflow: hidden;
+	text-align: center;
+}
+
+footer ul li {
+	display: inline;
+}
+
+footer ul li a {
+	display: inline-block;
+	color: orange;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+footer ul li a:hover {
+	background-color: #3b5998;
+}
+
+footer h2 {
+	margin: 30px auto;
+	text-align: center;
+	color: orange;
+}
+
+footer hr {
+	border: 0;
+	height: 1px;
+	background: #fff;
+	background-image: linear-gradient(to right, #424949, orange, #424949);
+}
